@@ -1,0 +1,53 @@
+.site-branding{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    font-family: 'Montserrat',sans-serif;
+}
+.site-title {
+
+    font-family: $font__sitetitle ;
+    font-weight: bold;
+    font-size: clamp(1rem, #{"-0.875rem + 8.333vw"},3rem);
+    margin-bottom: 0;
+    a {
+        text-decoration: none;
+    }
+}
+
+
+.site-description {
+    margin-top : 0;
+    font-family: $font__sitetitle ;
+    font-weight: normal;
+    font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1.5rem);
+  
+}
+
+
+.entry-header, .page-header{
+    color: turquoise;
+    
+    .enteteProjets{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(14, 122, 117);
+   
+    }
+
+    h1{
+        font-size: 3rem;
+        
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+}
+.entry-content{
+p{
+    width: 70%;
+}
+}
+

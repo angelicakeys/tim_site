@@ -1,0 +1,132 @@
+
+.galerie-perso2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    a{
+        color:white;
+        text-decoration:none;
+    }
+}
+
+.container{ /***************/
+  
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+   
+  }
+  .content-title {
+      display: flex;
+      justify-content: center;
+     
+      
+  }
+ 
+
+  .container .title{ /***************/
+    display: flex;
+    justify-content: center;
+    color: #1a1a1a;
+    text-align: center;
+  
+  }
+
+  .content {   /***************/
+    position: relative;
+    max-width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 12px;
+        margin: 5%;
+    }
+  
+  }
+
+  .content .content-overlay { /***************/
+   
+   
+    background-color: rgb(22, 194, 142);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+  .content:hover .content-overlay{ /***************/
+    opacity: 1;
+    animation: animProjet .50s both;
+  
+    
+  }
+  
+
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .content-imageHover{
+      width: 100%;
+   
+     
+  }
+  .content:hover .content-details{ /***************/
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  
+  }
+
+  .fadeIn-bottom{/***************/
+    top: 80%;
+  }
+
+  @keyframes animProjet{
+
+    0%{
+        transform: translateY(-100px);
+    }
+
+    50%{
+        transform: translateY(80px);
+    }
+
+
+    100%{
+        transform: translateY(0px);
+        //transform: translateY(50px);
+         //transform: translateY(100px);
+    }
+  }
+
+

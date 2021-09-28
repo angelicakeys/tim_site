@@ -1,0 +1,130 @@
+/**************SECTION NOUVELLES**********************************************/
+
+section.admin-rapid{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction:column;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    gap: 10px;
+    
+    //border-radius: 35px 90px 35px 90px;
+    //background-color: rgb(161, 223, 194);
+    background-color:rgb(29, 160, 160);
+    #bout-rapide{
+       margin-bottom: 4%;
+    }
+    #bout-rapide:hover{
+        background-color:rgb(52, 209, 157);
+    }
+    .enteteformulaire{
+        display: flex;
+        justify-content: center;
+        background-color:rgb(52, 209, 157);
+        width: 100%;
+    }
+
+   h3 {
+       display: flex;
+       justify-content: center;
+       color: white;
+       font-size:clamp(.6rem, #{"-0.875rem + 8.333vw"},1rem);
+       padding: 5%;
+       @include desktop{
+        padding: 0;
+       }
+       @include tablet{
+        padding: 0;
+       }
+   }
+    input{
+        width: 70%;
+    }
+    textarea{
+        align-items: center;
+        width: 70%;
+    }
+}
+section.nouvelles{
+   #bout_nouvelles{
+       display: none;
+   } 
+   h2{
+       //background-color: rgb(11, 156, 156);
+       //background-color: rgb(30, 16, 109);
+       border-bottom: 3px solid #12437a;
+       //color: white;
+       color:#12437a;
+       width: 100%;
+   }
+
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+    //background-color: aquamarine;
+    //background-color: #26c7c7;
+    background-color: #84a8d1;
+    margin-top: 70px;
+    
+    margin: 0px;
+
+    
+		
+   
+    section.boite{
+
+        h2{
+            background-color: none;
+        }
+       display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        margin: 90px;
+     @include desktop{
+        width: 50vw;
+     }
+
+    }
+
+}
+
+/******** ANNONCE ***********/
+
+#annonce{
+    background-color: cadetblue;
+    height: 10vh;
+    padding: 70px;/*Ajout*/
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+  @include desktop{
+    padding: 70px;
+    margin: 0;
+  }
+
+  @include tablet{
+    padding: 70px;
+    margin: 0;
+  }
+   
+    h2{
+        padding-top: 0;
+        margin: 0;
+    }
+    p{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-left: 30px;
+        padding-top: 10px;
+        color: white;
+    }
+    
+}

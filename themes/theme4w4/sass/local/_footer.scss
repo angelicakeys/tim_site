@@ -1,0 +1,40 @@
+
+.site-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0;
+
+/***** informations dans le footer mise à côté ****/
+   .site-info{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+      /*  gap: 30%; */
+        gap: 5%;
+
+       @include desktop{
+           //gap:30%;
+           justify-content: center;
+       }
+   }
+
+   #categories-3 a li{
+       display: flex;
+       flex-direction: column;
+   }
+}
+
+.nomfooter{
+    display: flex;
+    //flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10% ;
+    padding-top: 5%;
+    a{
+       padding-left: 2%;
+       display: flex;
+       align-items: center;
+       text-decoration: none;
+    }
+}

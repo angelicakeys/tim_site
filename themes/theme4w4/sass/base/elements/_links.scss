@@ -1,0 +1,125 @@
+a {
+	color: $color__link;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+.main-navigation {
+	a {
+		color: $color__linkmenu;
+
+		&:visited {
+			color: $color__linkmenu-visited;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $color__linkmenu-hover;
+		}
+
+		&:focus {
+			outline: thin dotted;
+		}
+
+		&:hover,
+		&:active {
+			outline: 0;
+		}
+	}
+}
+
+.site-title {
+	a {
+		color: $color__linksite-title;
+
+		&:visited {
+			color: $color__linksite-title-visited;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $color__linksite-title-hover;
+		}
+
+		&:focus {
+			outline: thin dotted;
+		}
+
+		&:hover,
+		&:active {
+			outline: 0;
+		}
+	}
+}
+
+/**** AJOUT VARIABLE COULEUR DANS FOOTER *****/
+.site-footer{
+	a{
+		color: $color__linksite-footer;
+
+		&:visited {
+			color: $color__linksite-footer-visited;
+		}
+		&:hover,
+		&:focus,
+		&:active {
+			color: $color__linksite-footer-hover;
+		}
+
+
+		&:focus {
+			outline: none;
+		}
+
+		&:hover,
+		&:active {
+			outline: 0;
+		}
+	}
+}
+
+/**** AJOUT VARIABLE COULEUR DANS MAIN *****/
+
+.site-main{
+	a{
+		color: $color__linksite-main;
+
+		&:visited {
+			color: $color__linksite-main-visited;
+		}
+		&:hover,
+		&:focus,
+		&:active {
+			color: $color__linksite-main-hover;
+		}
+
+
+		&:focus {
+			outline: none;
+		}
+
+		&:hover,
+		&:active {
+			outline: 0;
+		}
+	}
+}

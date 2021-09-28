@@ -1,0 +1,68 @@
+.site {
+	display: grid;
+	/* grid-template-columns: auto ($size__site-sidebar); */
+	grid-template-columns: 100%;
+	grid-template-areas:
+		"header header"
+		"main main"
+		"sidebar sidebar"
+		"footer footer";
+
+	@include desktop{
+	grid-template-columns: 80% 20%;
+	grid-template-areas:
+		"header header"
+		"main sidebar"
+		"footer footer";
+	}
+
+}
+
+.site-header {
+	grid-area: header;
+}
+
+.site-main {
+	grid-area: main;
+	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.widget-area {
+	grid-area: sidebar;
+	background-color: rgb(164, 190, 190);
+	padding: 70px;
+	
+	.textwidget, h2{
+		display: flex;
+		flex-direction: row;
+		align-content: center;
+
+	/* 	margin: 50px; */
+		@include desktop{
+			display: flex;
+		margin: 0px;
+		padding-top: 40px;
+		flex-direction: column;	
+		}
+
+		/* @include tablet{
+			padding:15%;
+		} */
+	}
+	
+	@include desktop{
+		padding-top: 30%;
+		padding:10%;
+
+		
+	}
+
+	
+
+}
+
+.site-footer {
+	grid-area: footer;
+}
+
+@import "no-sidebar";

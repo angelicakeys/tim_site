@@ -1,0 +1,41 @@
+.no-sidebar {
+
+	.site {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-areas:
+			"header header"
+			"main main"
+			"footer footer";
+		
+	}
+}
+
+/*
+#page .site (conteneur de la page)
+	#masthead  .site-header (entete de la page)
+		.site-branding
+			.site-title
+			.site-description
+		#site-nagigation .main-navigation	
+	#primary .site-main (section principale de la page)
+	#colophon .site-footer	
+*/
+
+.site-branding, #primary, #colophon {
+	margin-left : 3rem;
+}
+
+
+/****AJOUT*****/
+
+.site-footer, #colophon{
+	display: grid;
+	grid-area: "footer";
+	background-color: rgb(74, 133, 211);
+	width: 100vw;
+	height: auto;
+	color: black;
+	margin: 0;
+	
+}

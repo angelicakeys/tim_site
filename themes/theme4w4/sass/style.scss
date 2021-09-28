@@ -1,0 +1,144 @@
+/*!
+Theme Name: theme4w4
+Theme URI: http://underscores.me/
+Author: eddy martin
+Author URI: http://referenced.ca
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: theme4w4
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+theme4w4 is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+// Import variables and mixins.
+@import "abstracts/abstracts";
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+@import "generic/normalize";
+
+/* Box sizing
+--------------------------------------------- */
+@import "generic/box-sizing";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "base/base";
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+ @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
+//@import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
+//@import "layouts/no-sidebar";
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/components";
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+@import "plugins/jetpack/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Accessibility
+--------------------------------------------- */
+@import "utilities/accessibility";
+
+/* Alignments
+--------------------------------------------- */
+@import "utilities/alignments";
+
+/* local
+--------------------------------------------- */
+@import "local/accueil";
+/* local carrousel
+--------------------------------------------- */
+@import "local/carrousel";
+/* local slider
+--------------------------------------------- */
+@import "local/slider";
+
+/* local burger
+--------------------------------------------- */
+@import "local/burger";
+
+
+/* local galerie
+--------------------------------------------- */
+@import "local/galerie";
+
+/* local footer
+--------------------------------------------- */
+@import "local/footer";
+
+/* local formulaire
+--------------------------------------------- */
+@import "local/formulaire";
+
+/* local page
+--------------------------------------------- */
+@import "local/page";
+
+
+/* local galerie perso 
+--------------------------------------------- */
+@import "local/galerie-perso";
+
+
+/* local galerie perso 
+--------------------------------------------- */
+@import "local/galerie-perso2";
+

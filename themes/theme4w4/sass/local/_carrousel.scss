@@ -1,0 +1,27 @@
+.carrousel {
+    width: 300vw;
+    height: 20vh;
+    display : flex;
+    transition : transform .5s;
+    transform : translate(0);
+
+    div {
+        display : flex;
+        justify-content: center;
+        align-items: center;
+        width : 100vw;
+
+        &:nth-of-type(1){
+            background-color: rgb(0, 255, 55);
+        }
+        &:nth-of-type(2){
+            background-color: rgb(255, 157, 0);
+        }
+        &:nth-of-type(3){
+            background-color: rgb(0, 174, 255);
+        }
+
+    }
+   
+}
+
